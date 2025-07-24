@@ -114,16 +114,7 @@
             <div class="grid-vertical-divider"></div>
         </div>
     </div>
-    <section class="join-section">
-        <div class="join-content">
-            <h2 class="join-title">Join the Colorful Bunch!</h2>
-            <p class="join-message">Subscribe to get the freshest flower deals and updates delivered to your inbox.</p>
-            <form class="join-form">
-                <input type="email" class="join-input" placeholder="Enter your email address" required>
-                <button type="submit" class="join-btn">Subscribe</button>
-            </form>
-        </div>
-    </section>
+
     <div class="container">
         <div class="image-section">
             <img src="/assets/flower-store.png" alt="Person arranging flowers" />
@@ -144,40 +135,91 @@
         </div>
     </div>
     <section class="deals-section">
-        <h2 class="deals-title">Latest Deals</h2>
-        <p class="deals-subtitle">Grab these fresh offers before they're gone!</p>
-        <div class="deals-cards">
-            <div class="deal-card">
-                <img src="/assets/deal-bloom.png" alt="Bloom Deal" class="deal-img">
-                <h3 class="deal-name">Bloom Special</h3>
-                <p class="deal-desc">A vibrant mix of seasonal flowers at a special price.</p>
-                <span class="deal-price">$19.99</span>
+        <div class="deals-section-container">
+            <div class="deals-header">
+                <h2 class="section-title">Latest <span class="highlight">Deals</span></h2>
+                <p class="section-description">Indulge your senses with the beauty and fragrance of our fresh flower
+                    shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="deal-card">
-                <img src="/assets/deal-ana.png" alt="Ana Deal" class="deal-img">
-                <h3 class="deal-name">Ana's Choice</h3>
-                <p class="deal-desc">Handpicked bouquet by Ana, perfect for any occasion.</p>
-                <span class="deal-price">$24.99</span>
+            <div class="deals-grid">
+                <div class="deals-left-column">
+                    <div class="deal-card small-card">
+                        <img src="/assets/deal-bloom.png" alt="Bloom Plant" class="deal-card-image">
+                        <div class="deal-overlay">
+                            <p class="deal-text">60% Off | Bloom Plant</p>
+                            <button class="shop-now-button">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="deal-card small-card">
+                        <img src="/assets/deal-ana.png" alt="Ana Plant" class="deal-card-image">
+                        <div class="deal-overlay">
+                            <p class="deal-text">30% Off | Ana Plant</p>
+                            <button class="shop-now-button">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-card large-card">
+                    <img src="/assets/deal-zabo.png" alt="Zabo Plant" class="deal-card-image">
+                    <div class="deal-overlay">
+                        <p class="deal-text">25% Off | Zabo Plant</p>
+                        <button class="shop-now-button">Shop Now</button>
+                    </div>
+                </div>
             </div>
-            <div class="deal-card">
-                <img src="/assets/deal-zabo.png" alt="Zabo Deal" class="deal-img">
-                <h3 class="deal-name">Zabo Exclusive</h3>
-                <p class="deal-desc">Exotic flowers for a unique and elegant touch.</p>
-                <span class="deal-price">$29.99</span>
-            </div>
+        </div>
+
+    </section>
+    <section class="join-section">
+        <div class="join-content">
+            <h2 class="join-title">Join the Colorful Bunch!</h2>
+            <p class="join-message">Subscribe to get the freshest flower deals and updates delivered to your inbox.</p>
+            <form class="join-form">
+                <input type="email" class="join-input" placeholder="Enter your email address" required>
+                <button type="submit" class="join-btn">Subscribe</button>
+            </form>
         </div>
     </section>
 </body>
-<footer class="footer">
-    <div class="footer-left">
-        <img src="/assets/logo.png" alt="Flower Market Logo" class="footer-logo">
-        <span class="footer-site-name">Flower Market</span>
-    </div>
-    <div class="footer-links">
-        <a href="#" class="footer-link">Home</a>
-        <a href="#" class="footer-link">Features</a>
-        <a href="#" class="footer-link">Shop</a>
-        <a href="#" class="footer-link">About Us</a>
+<footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="/assets/logo.png" alt="Faugei Flower Shop Logo" class="logo-image">
+            </div>
+            <p class="footer-description">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+            </p>
+        </div>
+
+        <div class="footer-center">
+            <ul class="footer-links-column">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="footer-links-column">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="#" class="social-icon linkedin">
+                    <img src="/assets/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <span class="social-divider">x</span> <a href="#" class="social-icon facebook">
+                    <img src="/assets/icon-facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <img src="/assets/icon-youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
 
