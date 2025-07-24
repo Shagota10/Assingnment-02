@@ -64,6 +64,144 @@
       font-size: 1.1rem;
   }
 
+  .fresh-flowers-section {
+      font-family: 'Arial', sans-serif;
+      /* Use a font similar to the image */
+      background-color: #f8f8f8;
+      /* Light grey background */
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      /* Ensure enough height for the section */
+  }
+
+  .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      /* Max width for the content */
+      width: 100%;
+      gap: 40px;
+      /* Space between text/divider and image */
+  }
+
+  .text-content-left {
+      flex: 1;
+      max-width: 500px;
+      /* Limit width of text content */
+      text-align: left;
+      padding-left: 20px;
+      /* Small left padding as seen in the image */
+  }
+
+  .section-heading {
+      font-size: 3.5em;
+      /* Large font size for the heading */
+      font-weight: bold;
+      line-height: 1.1;
+      /* Tighter line height */
+      margin-bottom: 20px;
+      color: #333;
+      /* Dark color for 'ALWAYS' */
+  }
+
+  .section-heading .highlight-orange {
+      color: #ff6f00;
+      /* Orange color for 'FRESH FLOWERS' */
+  }
+
+  .section-description {
+      font-size: 1.1em;
+      color: #666;
+      line-height: 1.6;
+  }
+
+  .divider {
+      width: 2px;
+      /* Width of the dotted line */
+      height: 250px;
+      /* Height of the dotted line */
+      border-left: 2px dotted #cccccc;
+      /* Dotted light grey line */
+      flex-shrink: 0;
+      /* Prevent it from shrinking */
+  }
+
+  .image-content-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      /* Center the image within its container */
+      align-items: center;
+      padding-right: 20px;
+      /* Small right padding as seen in the image */
+  }
+
+  .flower-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      /* Slightly rounded corners for the image if desired */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      /* Subtle shadow for the image */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+      .content-wrapper {
+          flex-direction: column;
+          /* Stack elements vertically */
+          text-align: center;
+          /* Center align text when stacked */
+      }
+
+      .text-content-left {
+          padding-left: 0;
+          max-width: 90%;
+          /* Allow text to take more width */
+          margin-bottom: 30px;
+          /* Space below text content */
+      }
+
+      .section-heading {
+          font-size: 2.8em;
+          /* Adjust font size for smaller screens */
+      }
+
+      .divider {
+          width: 80%;
+          /* Make divider horizontal for stacked layout */
+          height: 2px;
+          border-left: none;
+          /* Remove vertical border */
+          border-top: 2px dotted #cccccc;
+          /* Add horizontal dotted border */
+          margin-bottom: 30px;
+          /* Space below divider */
+      }
+
+      .image-content-right {
+          padding-right: 0;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .section-heading {
+          font-size: 2em;
+      }
+
+      .section-description {
+          font-size: 1em;
+      }
+
+      .fresh-flowers-section {
+          padding: 50px 15px;
+      }
+  }
+
   .banner {
       display: flex;
       align-items: center;
@@ -129,7 +267,191 @@
       /* ...existing styles... */
   }
 
+  .plants-section-container {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      /* Light grey background */
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+      /* For positioning the vertical divider */
+      overflow: hidden;
+      /* Hide anything overflowing from the divider */
+  }
 
+  .plants-header {
+      margin-bottom: 40px;
+  }
+
+  .plants-title {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 10px;
+  }
+
+  .plants-title .highlight-text {
+      color: #ff6f00;
+      /* Orange color for 'Our' */
+  }
+
+  .plants-description {
+      font-size: 1.1em;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+  }
+
+  .plants-grid-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      /* Align grid and divider at the top */
+      position: relative;
+      width: fit-content;
+      /* Adjust width to content */
+      margin: 0 auto;
+      padding-bottom: 20px;
+      /* Space below grid */
+  }
+
+  .plants-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* 4 columns */
+      gap: 20px;
+      /* Space between cards */
+      max-width: 1200px;
+      /* Max width for the grid content */
+      margin: 0 auto;
+      position: relative;
+      /* For correct z-index */
+      z-index: 1;
+      /* Ensure grid content is above the divider */
+  }
+
+  .plant-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+      /* Space for text and button */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .plant-image {
+      width: 100%;
+      height: 200px;
+      /* Fixed height for images */
+      object-fit: cover;
+      /* Cover the area, cropping if necessary */
+      display: block;
+      margin-bottom: 15px;
+  }
+
+  .plant-name {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 5px;
+  }
+
+  .plant-price {
+      font-size: 1.1em;
+      color: #ff6f00;
+      /* Orange color for price */
+      font-weight: bold;
+      margin-bottom: 15px;
+  }
+
+  .add-to-cart-btn {
+      background-color: #ff6f00;
+      /* Orange button */
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+  }
+
+  .add-to-cart-btn:hover {
+      background-color: #e06000;
+      /* Darker orange on hover */
+  }
+
+  .grid-vertical-divider {
+      position: absolute;
+      top: -60px;
+      /* Start above the grid */
+      bottom: -60px;
+      /* Extend below the grid */
+      left: calc(50% + 10px);
+      /* Center the divider relative to the grid + half gap */
+      width: 2px;
+      border-left: 2px dotted #cccccc;
+      /* Dotted line style */
+      z-index: 0;
+      /* Behind the cards */
+  }
+
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+      .plants-grid {
+          grid-template-columns: repeat(3, 1fr);
+          /* 3 columns */
+      }
+  }
+
+  @media (max-width: 992px) {
+      .plants-grid {
+          grid-template-columns: repeat(2, 1fr);
+          /* 2 columns */
+      }
+
+      .grid-vertical-divider {
+          left: calc(50% + 10px);
+          /* Adjust position for 2 columns */
+      }
+  }
+
+  @media (max-width: 768px) {
+      .plants-grid {
+          grid-template-columns: 1fr;
+          /* 1 column */
+      }
+
+      .plants-grid-wrapper {
+          align-items: center;
+          /* Center horizontally when stacked */
+      }
+
+      .grid-vertical-divider {
+          display: none;
+          /* Hide vertical divider on small screens */
+      }
+  }
+
+  @media (max-width: 480px) {
+      .plants-title {
+          font-size: 2em;
+      }
+
+      .plants-description {
+          font-size: 1em;
+      }
+
+      .plant-image {
+          height: 180px;
+      }
+  }
 
   .join-section {
       width: 100%;
