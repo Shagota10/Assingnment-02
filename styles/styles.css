@@ -47,6 +47,10 @@
       padding: 1rem 2rem;
       background: #f8f8f8;
       flex-wrap: wrap;
+
+      @media (max-width:767px) {
+          display: block
+      }
   }
 
   .navbar-left {
@@ -1366,4 +1370,125 @@
       width: 220px;
       height: 220px;
       object-fit: cover;
+  }
+
+  /* General mobile improvements for iPhone 14 and similar devices */
+  @media (max-width: 430px) {
+
+      body,
+      html {
+          font-size: 15px;
+          padding: 0;
+          margin: 0;
+      }
+
+      .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0.7rem 0.5rem;
+      }
+
+      .logo {
+          height: 48px;
+      }
+
+      .navbar-right {
+          gap: 0.7rem;
+      }
+
+      .banner {
+          padding: 0.7rem 0.2rem;
+          gap: 1rem;
+      }
+
+      .banner-title {
+          font-size: 1.1rem;
+      }
+
+      .banner-text {
+          font-size: 0.95rem;
+      }
+
+      .banner-image img {
+          border-radius: 0.5rem;
+      }
+
+      .join-section {
+          padding: 1rem 0.1rem;
+          min-height: 200px;
+      }
+
+      .join-content {
+          padding: 0.7rem 0.2rem;
+      }
+
+      .join-title {
+          font-size: 1rem;
+      }
+
+      .join-form {
+          gap: 0.5rem;
+      }
+
+      .join-input,
+      .join-btn {
+          font-size: 0.95rem;
+          padding: 0.6rem 0.8rem;
+      }
+
+      .deals-section {
+          padding: 1.2rem 0.2rem;
+      }
+
+      .deals-title {
+          font-size: 1.1rem;
+      }
+
+      .deals-subtitle {
+          font-size: 0.95rem;
+      }
+
+      .deals-cards {
+          gap: 0.7rem;
+      }
+
+      .deal-card {
+          max-width: 98vw;
+          padding: 0.7rem 0.2rem;
+      }
+
+      .deal-img {
+          width: 70px;
+          height: 70px;
+      }
+
+      .footer {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0.7rem 0.5rem;
+          gap: 0.7rem;
+      }
+
+      .footer-logo {
+          height: 32px;
+      }
+
+      .footer-site-name {
+          font-size: 0.95rem;
+      }
+
+      .footer-links {
+          gap: 0.7rem;
+      }
+  }
+
+  /* Make sure images never overflow */
+  img,
+  .logo,
+  .footer-logo,
+  .deal-img,
+  .plant-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
   }
