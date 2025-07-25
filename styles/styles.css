@@ -47,10 +47,6 @@
       padding: 1rem 2rem;
       background: #f8f8f8;
       flex-wrap: wrap;
-
-      @media (max-width:767px) {
-          display: block
-      }
   }
 
   .navbar-left {
@@ -305,6 +301,7 @@
       position: relative;
 
   }
+
 
   .plants-section-container {
       font-family: Arial, sans-serif;
@@ -1392,8 +1389,74 @@
           height: 48px;
       }
 
+      .logo-image {
+          max-width: 150px;
+          height: auto;
+      }
+
+
+      .logo-text {
+          font-size: 1em;
+          font-weight: bold;
+          color: #ff6f00;
+      }
+
+      .logo-subtext {
+          font-size: 0.8em;
+          display: block;
+          color: #666;
+          letter-spacing: 0.5rempx;
+      }
+
       .navbar-right {
           gap: 0.7rem;
+      }
+
+      /* Fresh Flowers section: iPhone 14/15 Pro responsive */
+      @media (max-width: 430px) {
+          .fresh-flowers-section {
+              flex-direction: column;
+              padding: 1.2rem 0.5rem;
+              min-height: unset;
+          }
+
+          .content-wrapper {
+              flex-direction: column;
+              gap: 1.2rem;
+              max-width: 100%;
+              padding: 0;
+          }
+
+          .text-content-left {
+              max-width: 100%;
+              padding-left: 0;
+              margin-bottom: 1rem;
+              text-align: center;
+          }
+
+          .section-heading {
+              font-size: 1.3rem;
+              margin-bottom: 0.7rem;
+          }
+
+          .section-description {
+              font-size: 1rem;
+          }
+
+          .divider {
+              display: none;
+          }
+
+          .image-content-right {
+              padding-right: 0;
+              justify-content: center;
+          }
+
+          .flower-image {
+              max-width: 90vw;
+              height: auto;
+              border-radius: 0.7rem;
+          }
       }
 
       .banner {
@@ -1482,7 +1545,7 @@
       }
   }
 
-  /* Make sure images never overflow */
+
   img,
   .logo,
   .footer-logo,
@@ -1491,4 +1554,156 @@
       max-width: 100%;
       height: auto;
       display: block;
+  }
+
+  /* Banner section: iPhone 14 & 15 Pro responsive */
+  @media (max-width: 430px) {
+      .banner {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 1rem 0.5rem;
+          gap: 1rem;
+          text-align: left;
+      }
+
+      .banner-content {
+          width: 100%;
+          text-align: left;
+      }
+
+      .banner-title {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .banner-text {
+          font-size: 1rem;
+      }
+
+      .banner-image {
+          width: 100%;
+          justify-content: center;
+          margin-bottom: 0.5rem;
+      }
+
+      .banner-image img {
+          width: 100%;
+          max-width: 320px;
+          border-radius: 0.7rem;
+          margin: 0 auto;
+          display: block;
+      }
+  }
+
+  /* Plants section: iPhone 14 & 15 Pro responsive */
+  @media (max-width: 430px) {
+      .plants-section-container {
+          padding: 1.2rem 0.5rem;
+      }
+
+      .plants-header {
+          margin-bottom: 1.2rem;
+      }
+
+      .plants-title {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .plants-description {
+          font-size: 1rem;
+          max-width: 100%;
+      }
+
+      .plants-grid-wrapper {
+          flex-direction: column;
+          padding-bottom: 0.5rem;
+      }
+
+      .plants-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+      }
+
+      .plant-card {
+          padding-bottom: 1rem;
+      }
+
+      .plant-image {
+          height: 140px;
+          border-radius: 0.7rem;
+      }
+  }
+
+  /* Deals section: iPhone 14 & 15 Pro responsive */
+  @media (max-width: 430px) {
+      .deals-section {
+          padding: 1rem 0.3rem;
+      }
+
+      .deals-title {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .deals-subtitle {
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+      }
+
+      .deals-cards {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+      }
+
+      .deal-card {
+          max-width: 98vw;
+          width: 100%;
+          padding: 0.7rem 0.2rem;
+      }
+
+      .deal-img {
+          width: 70px;
+          height: 70px;
+      }
+
+      .deal-name {
+          font-size: 1rem;
+      }
+
+      .deal-desc {
+          font-size: 0.95rem;
+      }
+
+      .deal-price {
+          font-size: 1rem;
+      }
+  }
+
+  media (max-width: 430px) .container {
+      max-width: 100vw;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: 0;
+      margin-right: 0;
+      box-sizing: border-box;
+  }
+
+  @media (max-width: 430px) {
+
+      img,
+      .logo,
+      .footer-logo,
+      .deal-img,
+      .plant-image,
+      .flower-image {
+          max-width: 100vw;
+          width: 100%;
+          height: auto;
+          border-radius: 0.7rem;
+          display: block;
+          margin: 0 auto;
+          box-sizing: border-box;
+      }
   }
